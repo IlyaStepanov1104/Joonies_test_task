@@ -1,0 +1,217 @@
+@import url('https://fonts.cdnfonts.com/css/rotondac');
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+a:link { text-decoration: none; color: #fff1e1}
+a:visited { text-decoration: none; color: #fff1e1}
+a:active { text-decoration: none; color: #fff1e1}
+a:hover {text-decoration: none; color: #fff1e1}
+
+html{
+    overflow-x: hidden;
+    padding: 0 15vw;
+    margin: 0;
+    background-color: #96C6E9;
+    font-family: 'RotondaC', sans-serif;
+}
+
+h1{
+    font-size: 30px;
+    font-weight: bold;
+}
+h2{
+    font-size: 26px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+h3{
+    font-size: 22px;
+    font-weight: bold;
+    line-height: 24px;
+}
+h4{
+    font-size: 20px;
+    font-weight: bold;
+    line-height: 20px;
+}
+h5{
+    font-size: 16px;
+    font-weight: bold;
+    line-height: 20px;
+}
+
+/* ------ HEADER ------ */
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+header .flex{
+    text-transform: uppercase;
+    display: flex;
+    align-items: center;
+}
+
+header img{
+    width: 15vw;
+}
+
+header a{
+    height: 100%;
+    font-size: 14px;
+    margin-right: 10px;
+}
+
+/* ------ SECTION TEXT AND IMAGE ------ */
+.text_and_image{
+    position: relative;
+    margin-top: 28px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.text_and_image .text{
+    width: 35vw;
+}
+
+.text_and_image .image{
+    width: 35vw;
+}
+
+.text h1{
+    color: white;
+    text-transform: uppercase;
+}
+
+.text p{
+    margin-top: 20px;
+    color: white;
+    font-size: 18px;
+    line-height: 22px;
+}
+
+.text img{
+    margin-top: 37px;
+}
+
+.heart{
+    position: absolute;
+    opacity: 0.2;
+}
+
+.text_and_image .heart{
+    z-index: -1;
+}
+
+.big_heart{
+    width: 10vw;
+}
+.medium_heart{
+    width: 6vw;
+}
+.small_heart{
+    width: 3vw;
+}
+.right{
+    transform: rotate(-14deg)
+}
+.left{
+    transform: rotate(14deg)
+}
+
+.text_and_image .heart:nth-child(1){
+    left: -6%;
+    top: 14%;
+}
+
+.text_and_image .heart:nth-child(2){
+    left: 82%;
+    top: -10%;
+}
+.text_and_image .heart:nth-child(3){
+    left: 40%;
+    top: 69%;
+}
+.text_and_image .heart:nth-child(4){
+    left: 30%;
+    top: 82%;
+}
+
+/*----- Text on white bg -----*/
+.text_on_white{
+    position: relative;
+    height: calc(100vw * 1106/1920);
+}
+.bg{
+    position: absolute;
+    left: -15vw;
+    top: -13%;
+    height: calc(100vw * 1106/1920);
+    z-index: 0;
+}
+
+.text_on_white .heart{
+    z-index: 1;
+}
+
+.text_on_white .heart:nth-child(1){
+    left: 92%;
+    top: 5%;
+}.text_on_white .heart:nth-child(2){
+     left: -6%;
+     top: 10%;
+ }.text_on_white .heart:nth-child(3){
+       left: 100%;
+       top: 25%;
+       opacity: 0.5;
+  }
+  .text_on_white .penguins{
+      position: absolute;
+      z-index: 3;
+      width: 17vw;
+      left: 7%;
+      top: 16%;
+  }
+  .text_on_white .text{
+      position: absolute;
+      z-index: 2;
+      background: url('../images/pink_bg.svg') no-repeat;
+      background-size: contain;
+      width: 36vw;
+      height: 13vw;
+      padding: 7vw 5vw;
+      color: white;
+      left: 25%;
+      top: 15%;
+  }
+  .text_on_white p{
+      font-weight: 400;
+      margin-top: 3vw;
+      font-size: 16px;
+      line-height: 20px;
+  }
+
+  .text_on_white .weed{
+      position: absolute;
+      z-index: 2;
+      top: 6%;
+      left: 68%;
+  }
+
+  .text_on_white .warning{
+      display: flex;
+      position: absolute;
+      z-index: 2;
+      width: 30vw;
+      color: #483975;
+      align-items: center;
+      top: 65%;
+  }
+  .text_on_white .warning h5{
+      margin-left: 10px;
+  }
